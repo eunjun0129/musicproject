@@ -36,6 +36,10 @@ int main() {
 	}
 	xxx.write((char*)akbo, 4000 * sizeof(short));
 	// ggi
+	for (int i = 0; i < 200; i++) {
+		akbo[i] = 0; 
+	}
+	xxx.write((char*)akbo, 200 * sizeof(short));
 	f = 329.6; // E mi
 	for (int i = 0; i < 4000; i++) {
 		akbo[i] = (short)(A * sin(2 * pi * f * i * dt));
@@ -54,6 +58,10 @@ int main() {
 	}
 	xxx.write((char*)akbo, 4000 * sizeof(short));
 	// ya
+	for (int i = 0; i < 200; i++) {
+		akbo[i] = 0; 
+	}
+	xxx.write((char*)akbo, 200 * sizeof(short));
 	f = 293.66; // D
 	for (int i = 0; i < 4000; i++) {
 		akbo[i] = (short)(A * sin(2 * pi * f * i * dt));
@@ -89,6 +97,10 @@ int main() {
 		akbo[i] = (short)(A * sin(2 * pi * f * i * dt));
 	}
 	xxx.write((char*)akbo, 4000 * sizeof(short));
+	for (int i = 0; i < 200; i++) {
+		akbo[i] = 0; 
+	}
+	xxx.write((char*)akbo, 200 * sizeof(short));
 	
 
 	f = 392.0; // G sol
@@ -96,6 +108,10 @@ int main() {
 		akbo[i] = (short)(A * sin(2 * pi * f * i * dt));
 	}
 	xxx.write((char*)akbo, 4000 * sizeof(short));
+	for (int i = 0; i < 200; i++) {
+		akbo[i] = 0; 
+	}
+	xxx.write((char*)akbo, 200 * sizeof(short));
 
 	f = 392.0; // G sol
 	for (int i = 0; i < 4000; i++) {
